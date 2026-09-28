@@ -2622,7 +2622,9 @@ p {
   opacity: 0;
   visibility: hidden;
   overflow-y: auto;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
   transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
 }
 
@@ -2639,7 +2641,9 @@ p {
   width: 100%;
   max-width: 460px;
   box-shadow: var(--shadow-lg);
-  transform: scale(0.95);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: transform var(--transition-smooth);
   position: relative;
   height: auto;
@@ -2647,12 +2651,13 @@ p {
   max-height: calc(100vh - 24px);
   max-height: calc(100dvh - 24px);
   overflow: visible;
+  overscroll-behavior: contain;
   margin: auto;
   box-sizing: border-box;
 }
 
 .modal-overlay.open .modal-card {
-  transform: scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .modal-close {

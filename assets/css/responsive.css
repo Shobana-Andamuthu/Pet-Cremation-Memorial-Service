@@ -655,7 +655,9 @@
     align-items: center !important;
     justify-content: center !important;
     overflow-y: auto !important;
+    overscroll-behavior: contain !important;
     -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
   }
 
   .modal-card {
@@ -669,6 +671,10 @@
     max-width: 420px !important;
     box-sizing: border-box !important;
     overflow: visible !important;
+    overscroll-behavior: contain !important;
+    transform: translate3d(0, 0, 0) scale(1) !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
   }
 
   .modal-title {

@@ -329,20 +329,36 @@ function initCandles() {
    6. Modals & Consultation Triggers
    =================================================================== */
 function initModals() {
-  const modalOverlay = document.querySelector('#contactModal');
+  const modalOverlays = document.querySelectorAll('.modal-overlay');
   const modalTriggers = document.querySelectorAll('[data-open-modal="contact"]');
   const modalCloses = document.querySelectorAll('.modal-close, [data-close-modal]');
 
-  if (!modalOverlay) return;
+  if (!modalOverlays.length) return;
 
-  function openModal() {
-    modalOverlay.classList.add('open');
+  function openModal(targetModal) {
+    const modal = targetModal || document.querySelector('#contactModal') || modalOverlays[0];
+    if (!modal) return;
+
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    if (scrollBarWidth > 0) {
+      document.body.style.paddingRight = `${scrollBarWidth}px`;
+    }
+
+    modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
   }
 
-  function closeModal() {
-    modalOverlay.classList.remove('open');
-    document.body.style.overflow = '';
+  function closeModal(targetModal) {
+    const modals = targetModal ? [targetModal] : modalOverlays;
+    modals.forEach(m => m.classList.remove('open'));
+
+    const anyOpen = Array.from(modalOverlays).some(m => m.classList.contains('open'));
+    if (!anyOpen) {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.body.style.paddingRight = '';
+    }
   }
 
   modalTriggers.forEach(btn => {
@@ -353,24 +369,49 @@ function initModals() {
   });
 
   modalCloses.forEach(btn => {
-    btn.addEventListener('click', closeModal);
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parentModal = btn.closest('.modal-overlay');
+      closeModal(parentModal);
+    });
   });
 
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) {
-      closeModal();
+  modalOverlays.forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        closeModal(overlay);
+      }
+    });
+
+    // Prevent shaking/rubberband bounce when content fits inside modal viewport
+    overlay.addEventListener('touchmove', (e) => {
+      if (overlay.scrollHeight <= overlay.clientHeight) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    overlay.addEventListener('wheel', (e) => {
+      if (overlay.scrollHeight <= overlay.clientHeight) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    const modalForm = overlay.querySelector('form');
+    if (modalForm) {
+      modalForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        closeModal(overlay);
+        showToast('🕊️ Thank you. Our care team will reach out with gentle guidance.');
+        modalForm.reset();
+      });
     }
   });
 
-  const modalForm = modalOverlay.querySelector('form');
-  if (modalForm) {
-    modalForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
       closeModal();
-      showToast('🕊️ Thank you. Our care team will reach out with gentle guidance.');
-      modalForm.reset();
-    });
-  }
+    }
+  });
 }
 
 /* ===================================================================
