@@ -4673,6 +4673,15 @@ textarea.form-control {
   margin-left: auto !important;
   margin-right: auto !important;
   margin-bottom: 18px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+[data-theme="dark"] .cta2-content .section-tag {
+  background: rgba(164, 183, 156, 0.2);
+  color: var(--primary);
+  border-color: rgba(164, 183, 156, 0.35);
 }
 
 .cta2-title {
