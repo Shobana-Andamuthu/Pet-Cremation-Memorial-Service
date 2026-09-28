@@ -4898,24 +4898,35 @@ textarea.form-control {
 }
 
 .form-privacy-note {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   text-align: center;
-  gap: 7px;
-  font-size: 0.84rem;
+  font-size: clamp(0.74rem, 2.2vw, 0.84rem);
   color: var(--text-muted);
-  line-height: 1.4;
+  line-height: 1.45;
   margin: 10px auto 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 480px;
 }
 
 .form-privacy-note svg {
   color: var(--accent);
-  flex-shrink: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: -2px;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .form-privacy-note {
+  color: #CBD5CB;
+}
+
+[data-theme="dark"] .form-privacy-note svg {
+  color: var(--primary);
+}
+
+[dir="rtl"] .form-privacy-note svg {
+  margin-right: 0;
+  margin-left: 4px;
 }
 
 .form-feedback-modal {
