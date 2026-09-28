@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Everlasting Paws Tribute Wall — A sacred digital memorial celebrating cherished pets, memory stories, and interactive remembrance candle lighting.">
+  <meta name="keywords" content="pet tribute wall, pet memorial stories, light pet memorial candle, pet remembrance gallery, pet loss tributes">
+  <title>Tribute Wall — Everlasting Paws | Pet Memorial Stories</title>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core CSS & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Page Preloader -->
+  <div class="page-preloader" id="pagePreloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-icon-wrap">
+        <svg class="preloader-paw" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+          <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"/>
+          <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"/>
+          <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"/>
+        </svg>
+        <div class="preloader-ring"></div>
+      </div>
+      <div class="preloader-text">Everlasting<span>Paws</span></div>
+      <div class="preloader-line"></div>
+    </div>
+  </div>
+
+
+  <!-- ===================================================================
+       Site Header / Navigation
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" id="mainLogo" aria-label="Everlasting Paws Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+              <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            </svg>
+          </div>
+          <div class="brand-text">Everlasting<span>Paws</span></div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <!-- Home Dropdown -->
+          <div class="nav-dropdown" id="homeDropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true" id="homeDropdownBtn">
+              Home
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="homeDropdownBtn">
+              <a href="index.html" class="dropdown-item" id="navHome1">
+                <span>Home 1 (Classic)</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item" id="navHome2">
+                <span>Home 2 (Serene)</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="services.html" class="nav-link" id="navServices">Services</a>
+          <a href="tribute-wall.html" class="nav-link active" id="navTributes">Tribute Wall</a>
+          <a href="memorial-keepsakes.html" class="nav-link" id="navKeepsakes">Memorial Keepsakes</a>
+          <a href="about.html" class="nav-link" id="navAbout">About Us</a>
+          <a href="contact.html" class="nav-link" id="navContact">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- RTL / LTR Toggle -->
+          <button class="rtl-toggle" id="rtlToggleBtn" aria-label="Toggle text direction" title="Toggle RTL/LTR">RTL</button>
+
+          <!-- Login Button -->
+          <a href="login.html" class="btn btn-secondary btn-sm" id="headerLoginBtn" style="padding: 7px 16px;">
+            Login
+          </a>
+
+          <!-- Quick Consultation Action -->
+          <a href="#contactModal" data-open-modal="contact" class="btn btn-primary btn-sm" id="headerConsultBtn">
+            Care Hotline
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button class="menu-toggle" id="mobileMenuBtn" aria-label="Open Navigation Drawer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Mobile & Tablet Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+              <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            </svg>
+          </div>
+          <div class="brand-text">Everlasting<span>Paws</span></div>
+        </a>
+        <button class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <div class="drawer-dropdown" id="drawerHomeDropdown">
+          <button class="drawer-dropdown-btn" id="drawerHomeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home Pages</span>
+            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="drawer-subnav">
+            <a href="index.html" class="drawer-sublink">• Home 1 (Classic)</a>
+            <a href="home-2.html" class="drawer-sublink">• Home 2 (Serene)</a>
+          </div>
+        </div>
+        <a href="services.html" class="drawer-link">Services</a>
+        <a href="tribute-wall.html" class="drawer-link active">Tribute Wall</a>
+        <a href="memorial-keepsakes.html" class="drawer-link">Memorial Keepsakes</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+        <a href="login.html" class="drawer-link" style="border-top: 1px solid var(--surface-border); margin-top: 4px; padding-top: 14px;">Family Login</a>
+        <a href="register.html" class="drawer-link">Create Account</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="#contactModal" data-open-modal="contact" class="btn btn-primary" id="drawerConsultBtn" style="width: 100%;">
+          Care Hotline
+        </a>
+        <div class="drawer-controls">
+          <button class="drawer-theme-btn" id="drawerThemeToggle" aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <span class="theme-text">Dark Mode</span>
+          </button>
+          <button class="rtl-toggle" id="drawerRtlToggle" aria-label="Toggle text direction">RTL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ===================================================================
+         SECTION 1: Tribute Wall Hero
+         =================================================================== -->
+    <section class="page-hero" id="tributeHero">
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <div class="badge badge-accent">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11zm0 15a3 3 0 0 1-3-3c0-1.5 1-3 3-5 2 2 3 3.5 3 5a3 3 0 0 1-3 3z"/></svg>
+              <span>Living Memories &bull; Honoring Forever Love</span>
+            </div>
+            <h1 class="page-hero-title">
+              In Loving Memory of Our <em>Faithful Friends</em>
+            </h1>
+            <p class="page-hero-desc">
+              A sacred gathering space to remember, honor, and celebrate the magnificent souls who blessed our lives with pure joy, unconditional loyalty, and timeless devotion.
+            </p>
+            <div class="page-hero-actions">
+              <a href="#createTribute" class="btn btn-primary" id="heroShareTributeBtn">
+                <span>Share a Loving Tribute</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#featuredTributes" class="btn btn-secondary" id="heroLightCandleBtn">
+                Light Memorial Candles
+              </a>
+            </div>
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="stat-number">4,200+</span>
+                <span class="stat-label">Memorial Candles Lit</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">1,850+</span>
+                <span class="stat-label">Stories &amp; Tributes</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">Free</span>
+                <span class="stat-label">Public Memorials</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-hero-image-wrap">
+            <img src="assets/images/tribute/tribute-hero.jpg" alt="Two peaceful dogs resting in a sunny garden" class="page-hero-img" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 2: Featured Tributes (3 Detailed Pet Cards)
+         =================================================================== -->
+    <section class="tributes-section section-padding" id="featuredTributes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Remembrances</span>
+          <h2 class="section-title">Cherished Companion Tributes</h2>
+          <p class="section-desc">
+            Each life was a masterpiece of devotion. Click below to light a virtual candle and send loving warmth.
+          </p>
+        </div>
+
+        <div class="tributes-grid">
+          <!-- Tribute 1: Max -->
+          <div class="tribute-card" id="tribMax">
+            <div class="tribute-header">
+              <div class="tribute-avatar-wrap">
+                <img src="assets/images/tribute/pet-max-golden.jpg" alt="Adorable white puppy resting peacefully on deck" width="150" height="150" loading="lazy">
+              </div>
+              <div class="tribute-meta">
+                <h3 class="tribute-name">Max</h3>
+                <span class="tribute-years">2011 — 2024 • Golden Retriever</span>
+              </div>
+            </div>
+            <div class="tribute-body">
+              <p class="tribute-quote">
+                "Thirteen years of muddy paw prints, gentle leaning hugs, and greeting us at the door with a tennis ball. You were our greatest family blessing, sweet Max."
+              </p>
+              <div class="tribute-footer">
+                <span class="tribute-family">The Harrison Family</span>
+                <button class="candle-btn" data-pet="Max" aria-label="Light a candle for Max">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11zm0 15a3 3 0 0 1-3-3c0-1.5 1-3 3-5 2 2 3 3.5 3 5a3 3 0 0 1-3 3z"/>
+                  </svg>
+                  Light Candle
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tribute 2: Cleo -->
+          <div class="tribute-card" id="tribCleo">
+            <div class="tribute-header">
+              <div class="tribute-avatar-wrap">
+                <img src="assets/images/tribute/pet-cleo-cat.jpg" alt="Cute puppy wearing stylish denim jacket vest" width="150" height="150" loading="lazy">
+              </div>
+              <div class="tribute-meta">
+                <h3 class="tribute-name">Cleo</h3>
+                <span class="tribute-years">2008 — 2024 • Domestic Longhair</span>
+              </div>
+            </div>
+            <div class="tribute-body">
+              <p class="tribute-quote">
+                "Queen of every sunbeam and silent comforting healer. Your melodic purrs smoothed every rough day. Sleep peacefully under the starry skies, darling Cleo."
+              </p>
+              <div class="tribute-footer">
+                <span class="tribute-family">Elena &amp; Robert</span>
+                <button class="candle-btn" data-pet="Cleo" aria-label="Light a candle for Cleo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11zm0 15a3 3 0 0 1-3-3c0-1.5 1-3 3-5 2 2 3 3.5 3 5a3 3 0 0 1-3 3z"/>
+                  </svg>
+                  Light Candle
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tribute 3: Rocky -->
+          <div class="tribute-card" id="tribRocky">
+            <div class="tribute-header">
+              <div class="tribute-avatar-wrap">
+                <img src="assets/images/tribute/pet-rocky-boxer.jpg" alt="Smiling Welsh Corgi dog on sunny grass" width="150" height="150" loading="lazy">
+              </div>
+              <div class="tribute-meta">
+                <h3 class="tribute-name">Rocky</h3>
+                <span class="tribute-years">2015 — 2024 • Boxer</span>
+              </div>
+            </div>
+            <div class="tribute-body">
+              <p class="tribute-quote">
+                "Our brave protector with the biggest goofy heart. You watched over the children with infinite patience. We will run together again across green meadows."
+              </p>
+              <div class="tribute-footer">
+                <span class="tribute-family">The Morales Family</span>
+                <button class="candle-btn" data-pet="Rocky" aria-label="Light a candle for Rocky">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11zm0 15a3 3 0 0 1-3-3c0-1.5 1-3 3-5 2 2 3 3.5 3 5a3 3 0 0 1-3 3z"/>
+                  </svg>
+                  Light Candle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: Recent Memories (3 Gallery-Style Cards)
+         =================================================================== -->
+    <section class="care-section section-padding" id="recentMemories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Community Wall</span>
+          <h2 class="section-title">Recent Memories &amp; Paw Prints</h2>
+          <p class="section-desc">
+            Heartfelt tributes shared recently by families across our community.
+          </p>
+        </div>
+
+        <div class="collection-grid">
+          <!-- Memory 1: Coco -->
+          <div class="collection-item-card" id="memCoco">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute/pet-coco-poodle.jpg" alt="Brown miniature poodle puppy Coco" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Coco (2018 — 2024)</h3>
+              <p class="collection-desc">
+                "Our curly brown bundle of sunshine. You taught us the meaning of pure gentleness every single day."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Chen Family</span>
+                <button class="candle-btn" data-pet="Coco">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 2: Simba -->
+          <div class="collection-item-card" id="memSimba">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute/pet-simba-tabby.jpg" alt="Orange tabby cat Simba sitting in window" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Simba (2012 — 2024)</h3>
+              <p class="collection-desc">
+                "Our brave little lion. Thank you for 12 years of soft headbutts and steadfast companionship."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">Laura G.</span>
+                <button class="candle-btn" data-pet="Simba">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 3: Shadow -->
+          <div class="collection-item-card" id="memShadow">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute/pet-shadow-husky.jpg" alt="Husky mix named Shadow looking at camera" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Shadow (2014 — 2024)</h3>
+              <p class="collection-desc">
+                "Singing your vocal songs into the wind. You will forever run wild and free across our mountain memories."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Taylor Family</span>
+                <button class="candle-btn" data-pet="Shadow">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 4: Max -->
+          <div class="collection-item-card" id="memMax">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute/tribute-memory-max.jpg" alt="Smiling Golden Retriever puppy sitting with open mouth" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Max (2015 — 2024)</h3>
+              <p class="collection-desc">
+                "Our loyal golden boy with a heart of pure gold. Your joyful tail wag and loving eyes will forever illuminate our home."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Harrison Family</span>
+                <button class="candle-btn" data-pet="Max">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 5: Luna (Row 2, Item 1) -->
+          <div class="collection-item-card" id="memLuna">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute-luna.jpg" alt="Sweet Shepherd mix Luna in nature" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Luna (2016 — 2024)</h3>
+              <p class="collection-desc">
+                "Our sweetest guardian angel and gentle soul who watched over our entire family with unending love and quiet loyalty."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Davies Family</span>
+                <button class="candle-btn" data-pet="Luna">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 6: Barnaby (Row 2, Item 2) -->
+          <div class="collection-item-card" id="memBarnaby">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute-barnaby.jpg" alt="Basset Hound Barnaby with long velvety ears" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Barnaby (2013 — 2024)</h3>
+              <p class="collection-desc">
+                "Big soulful eyes and the softest ears. Thank you for eleven years of endless warmth, peaceful snores, and laughter."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">Michael &amp; Sarah K.</span>
+                <button class="candle-btn" data-pet="Barnaby">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 7: Milo (Row 2, Item 3) -->
+          <div class="collection-item-card" id="memMilo">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute-milo.jpg" alt="Tabby cat Milo relaxing calmly" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Milo (2015 — 2024)</h3>
+              <p class="collection-desc">
+                "The softest cuddles and melodic purrs on rainy afternoons. Forever curled up in the warm sunshine of our hearts."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Tanaka Family</span>
+                <button class="candle-btn" data-pet="Milo">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 8: Charlie (Row 2, Item 4) -->
+          <div class="collection-item-card" id="memCharlie">
+            <div class="collection-thumb">
+              <img src="assets/images/home2_fixed/h2-tribute-charlie.jpg" alt="Happy beagle dog Charlie on grass" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Charlie (2017 — 2024)</h3>
+              <p class="collection-desc">
+                "Always ready for an adventure with a happy wagging tail. You filled every single morning with genuine joy."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Anderson Family</span>
+                <button class="candle-btn" data-pet="Charlie">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 9: Daisy (Row 3, Item 1) -->
+          <div class="collection-item-card" id="memDaisy">
+            <div class="collection-thumb">
+              <img src="assets/images/home2_fixed/h2-tribute-daisy.jpg" alt="Adorable golden retriever puppy yawning happily with red collar" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Daisy (2014 — 2024)</h3>
+              <p class="collection-desc">
+                "Our sweet golden sunflower. Your gentle spirit and soft eyes brought unconditional comfort to everyone you met."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">Emma &amp; David</span>
+                <button class="candle-btn" data-pet="Daisy">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 10: Oliver (Row 3, Item 2) -->
+          <div class="collection-item-card" id="memOliver">
+            <div class="collection-thumb">
+              <img src="assets/images/home2_fixed/h2-tribute-oliver.jpg" alt="Gentle cat Oliver looking into camera" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Oliver (2016 — 2024)</h3>
+              <p class="collection-desc">
+                "Quiet grace, inquisitive head tilts, and a heart full of soft purrs. You will always be our sweetest companion."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Sterling Family</span>
+                <button class="candle-btn" data-pet="Oliver">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 11: Cleo (Row 3, Item 3) -->
+          <div class="collection-item-card" id="memCleo2">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute/tribute-memory-cleo.jpg" alt="Golden retriever resting comfortably on green bed" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Cleo (2012 — 2024)</h3>
+              <p class="collection-desc">
+                "Queen of every sunbeam and silent comforting healer. Your soft presence made our house a warm, loving home."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">Elena &amp; Robert</span>
+                <button class="candle-btn" data-pet="Cleo">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 12: Rocky (Row 3, Item 4) -->
+          <div class="collection-item-card" id="memRocky2">
+            <div class="collection-thumb">
+              <img src="assets/images/tribute/tribute-memory-rocky.jpg" alt="Cute Corgi puppy sitting on light wood deck" width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Rocky (2015 — 2024)</h3>
+              <p class="collection-desc">
+                "Our brave boy with the goofy smile and biggest heart. Running free and wild across eternal sunny green pastures."
+              </p>
+              <div class="collection-action-row">
+                <span style="font-size:0.82rem; color:var(--text-light);">The Morales Family</span>
+                <button class="candle-btn" data-pet="Rocky">🕯️ Light Candle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: Pet Memory Stories (Detailed Narrative Split Blocks)
+         =================================================================== -->
+    <section class="honoring-section section-padding" id="petStories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Deep Stories</span>
+          <h2 class="section-title">Stories That Touch the Heart</h2>
+          <p class="section-desc">
+            Extended narratives celebrating extraordinary milestones, funny memories, and indelible legacies.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 48px;">
+          <!-- Story 1 -->
+          <div class="split-grid">
+            <div class="split-media-wrapper">
+              <div class="split-image-card">
+                <img src="assets/images/tribute/tribute-story-jasper.jpg" alt="Jasper the rescue dog exploring outdoors" width="800" height="600" loading="lazy">
+              </div>
+            </div>
+            <div class="split-content">
+              <span class="section-tag">Rescue Story</span>
+              <h3 class="split-title" style="font-size: 1.8rem;">Jasper: The Mountain Trail Guide</h3>
+              <p class="split-desc">
+                "When we adopted Jasper from the shelter ten years ago, he was timid and afraid of storms. With patience, he transformed into our family's fearless trail leader, summiting over 40 peaks across the Pacific Northwest. In his final months, when his paws grew tired, he still loved smelling the pine trees from his wagon. Everlasting Paws captured his spirit so beautifully with our memorial glass stone."
+              </p>
+              <div class="story-author-row">
+                <span class="story-author-name">— Dan &amp; Maya Sterling</span>
+                <button class="candle-btn" data-pet="Jasper">🕯️ Light Candle for Jasper</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story 2 -->
+          <div class="split-grid">
+            <div class="split-content">
+              <span class="section-tag">Feline Guardian</span>
+              <h3 class="split-title" style="font-size: 1.8rem;">Mia: A Whispered Blessing</h3>
+              <p class="split-desc">
+                "Mia lived to the incredible age of 19. She was there when I graduated college, bought my first home, and brought my baby daughter home from the hospital. She slept at the foot of the crib every night like a guardian angel. The ceramic urn crafted for her is a serene tribute to almost two decades of pure, unconditional comfort."
+              </p>
+              <div class="story-author-row">
+                <span class="story-author-name">— Jessica Ross</span>
+                <button class="candle-btn" data-pet="Mia">🕯️ Light Candle for Mia</button>
+              </div>
+            </div>
+            <div class="split-media-wrapper">
+              <div class="split-image-card">
+                <img src="assets/images/tribute/tribute-story-mia.jpg" alt="Calm cat Mia resting comfortably" width="800" height="600" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 5: Create a Tribute CTA
+         =================================================================== -->
+    <section class="cta-section section-padding" id="createTribute">
+      <div class="container">
+        <div class="cta2-banner" style="background-image: url('assets/images/tribute/tribute-cta-candle.jpg');">
+          <div class="cta2-overlay"></div>
+          <div class="cta2-content">
+            <span class="section-tag" style="background:rgba(255,255,255,0.2); color:#FFFFFF; border:1px solid rgba(255,255,255,0.3);">
+              🕊️ Memorial Submission
+            </span>
+            <h2 class="cta2-title">Honor Your Companion's Story on Our Tribute Wall</h2>
+            <p class="cta2-text">
+              Share your favorite photograph, write a loving remembrance message, and create a permanent sanctuary where friends and family can light virtual memorial candles.
+            </p>
+            <div class="cta2-actions">
+              <a href="#tributeModal" data-open-modal="contact" class="btn btn-primary" style="background:#FFFFFF; color:var(--deep-accent); border-color:#FFFFFF;">
+                Submit a Pet Tribute
+              </a>
+              <a href="services.html" class="btn btn-secondary" style="background:rgba(255,255,255,0.15); color:#FFFFFF; border-color:rgba(255,255,255,0.35);">
+                Explore Memorial Keepsakes
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       Site Footer
+       =================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Emergency -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="Everlasting Paws Home">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+                <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+              </svg>
+            </div>
+            <div class="brand-text">Everlasting<span>Paws</span></div>
+          </a>
+          <p class="footer-desc">
+            Providing compassionate, certified pet cremation, memorial keepsakes, and tribute services. Dedicated to honoring the profound love between humans and animals.
+          </p>
+          <div class="emergency-notice">
+            <div class="notice-badge">24/7 Immediate Help</div>
+            <a href="tel:18005557297" class="notice-phone">1-800-555-PAWS (7297)</a>
+            <span class="notice-sub">Available for residential and veterinary transfers</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation & Pages -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Classic)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Serene)</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="tribute-wall.html" class="footer-link">Tribute Wall</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Memorial Keepsakes</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Keepsakes -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#privateServiceCard" class="footer-link">Private Cremation</a></li>
+            <li><a href="services.html#communalServiceCard" class="footer-link">Communal Cremation</a></li>
+            <li><a href="services.html#serviceProcess" class="footer-link">Farewell Viewing Suites</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Paw Print Keepsakes</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Memorial Jewelry</a></li>
+            <li><a href="memorial-keepsakes.html#urnCollectionSection" class="footer-link">Handcrafted Urns</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Support -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact &amp; Care</h4>
+          <div class="footer-contact-info">
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>4820 Serenity Meadow Way, Austin, TX 78746</span>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:18005557297">1-800-555-PAWS (7297)</a>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:care@everlastingpaws.org">care@everlastingpaws.org</a>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Daily Intake: 8:00 AM &ndash; 8:00 PM</span>
+            </div>
+            <div class="footer-portal-links">
+              <a href="login.html" class="footer-link">Family Portal Login</a>
+              <span class="divider">&bull;</span>
+              <a href="register.html" class="footer-link">Register Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Everlasting Paws Pet Cremation &amp; Memorial Services. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Care</a>
+          <a href="about.html">Pet Loss Grief Resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       Quick Care & Consultation Modal
+       =================================================================== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h3 class="modal-title">Share a Memorial Tribute</h3>
+      <p class="modal-desc">Honor your pet's life on our community Tribute Wall.</p>
+      <form class="modal-form">
+        <div class="form-group">
+          <label for="petTributeName">Your Name</label>
+          <input type="text" id="petTributeName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+        </div>
+        <div class="form-group">
+          <label for="petNameInput">Pet's Name &amp; Breed</label>
+          <input type="text" id="petNameInput" class="form-control" placeholder="e.g. Barnaby (Golden Retriever)" required>
+        </div>
+        <div class="form-group">
+          <label for="petYears">Years (e.g. 2012 — 2024)</label>
+          <input type="text" id="petYears" class="form-control" placeholder="e.g. 2012 — 2024">
+        </div>
+        <div class="form-group">
+          <label for="tributeMessage">Your Tribute Message</label>
+          <textarea id="tributeMessage" class="form-control" rows="3" placeholder="Share your favorite memory..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+          Publish Pet Tribute
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Everlasting Paws Services — Certified private pet cremation, peaceful communal garden scattering, handcrafted urns, and personalized memorial keepsakes.">
+  <meta name="keywords"
+    content="pet cremation services, private pet cremation, communal pet cremation, pet memorial urns, paw print casting, pet loss support">
+  <title>Services — Everlasting Paws | Gentle Pet Cremation & Memorial</title>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core CSS & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+</head>
+
+<body>
+  <!-- Page Preloader -->
+  <div class="page-preloader" id="pagePreloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-icon-wrap">
+        <svg class="preloader-paw" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z" />
+          <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor" />
+          <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor" />
+          <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor" />
+        </svg>
+        <div class="preloader-ring"></div>
+      </div>
+      <div class="preloader-text">Everlasting<span>Paws</span></div>
+      <div class="preloader-line"></div>
+    </div>
+  </div>
+
+
+  <!-- ===================================================================
+       Site Header / Navigation
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" id="mainLogo" aria-label="Everlasting Paws Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z" />
+              <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+            </svg>
+          </div>
+          <div class="brand-text">Everlasting<span>Paws</span></div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <!-- Home Dropdown -->
+          <div class="nav-dropdown" id="homeDropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true" id="homeDropdownBtn">
+              Home
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="homeDropdownBtn">
+              <a href="index.html" class="dropdown-item" id="navHome1">
+                <span>Home 1 (Classic)</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item" id="navHome2">
+                <span>Home 2 (Serene)</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="services.html" class="nav-link active" id="navServices">Services</a>
+          <a href="tribute-wall.html" class="nav-link" id="navTributes">Tribute Wall</a>
+          <a href="memorial-keepsakes.html" class="nav-link" id="navKeepsakes">Memorial Keepsakes</a>
+          <a href="about.html" class="nav-link" id="navAbout">About Us</a>
+          <a href="contact.html" class="nav-link" id="navContact">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- RTL / LTR Toggle -->
+          <button class="rtl-toggle" id="rtlToggleBtn" aria-label="Toggle text direction"
+            title="Toggle RTL/LTR">RTL</button>
+
+          <!-- Login Button -->
+          <a href="login.html" class="btn btn-secondary btn-sm" id="headerLoginBtn" style="padding: 7px 16px;">
+            Login
+          </a>
+
+          <!-- Quick Consultation Action -->
+          <a href="#contactModal" data-open-modal="contact" class="btn btn-primary btn-sm" id="headerConsultBtn">
+            Care Hotline
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button class="menu-toggle" id="mobileMenuBtn" aria-label="Open Navigation Drawer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile & Tablet Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z" />
+              <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+            </svg>
+          </div>
+          <div class="brand-text">Everlasting<span>Paws</span></div>
+        </a>
+        <button class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <div class="drawer-dropdown" id="drawerHomeDropdown">
+          <button class="drawer-dropdown-btn" id="drawerHomeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home Pages</span>
+            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="drawer-subnav">
+            <a href="index.html" class="drawer-sublink">• Home 1 (Classic)</a>
+            <a href="home-2.html" class="drawer-sublink">• Home 2 (Serene)</a>
+          </div>
+        </div>
+        <a href="services.html" class="drawer-link active">Services</a>
+        <a href="tribute-wall.html" class="drawer-link">Tribute Wall</a>
+        <a href="memorial-keepsakes.html" class="drawer-link">Memorial Keepsakes</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+        <a href="login.html" class="drawer-link"
+          style="border-top: 1px solid var(--surface-border); margin-top: 4px; padding-top: 14px;">Family Login</a>
+        <a href="register.html" class="drawer-link">Create Account</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="#contactModal" data-open-modal="contact" class="btn btn-primary" id="drawerConsultBtn"
+          style="width: 100%;">
+          Care Hotline
+        </a>
+        <div class="drawer-controls">
+          <button class="drawer-theme-btn" id="drawerThemeToggle" aria-label="Toggle light and dark mode"
+            title="Toggle Theme">
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <span class="theme-text">Dark Mode</span>
+          </button>
+          <button class="rtl-toggle" id="drawerRtlToggle" aria-label="Toggle text direction">RTL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ===================================================================
+         SECTION 1: Services Hero
+         =================================================================== -->
+    <section class="page-hero" id="servicesHero">
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <div class="badge badge-accent">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z" />
+              </svg>
+              <span>Compassionate Aftercare &bull; Certified Dignity</span>
+            </div>
+            <h1 class="page-hero-title">
+              Gentle Aftercare Services for Your <em>Beloved Pet</em>
+            </h1>
+            <p class="page-hero-desc">
+              We provide individualized, dignified pet cremation, custom memorial keepsakes, and peaceful family
+              farewell suites. Every companion receives unconditional gentleness, transparency, and certified
+              identification tracking.
+            </p>
+            <div class="page-hero-actions">
+              <a href="#cremationServices" class="btn btn-primary" id="heroCremationOptionsBtn">
+                <span>View Cremation Options</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="contact.html" class="btn btn-secondary" id="heroSpeakCounselorBtn">
+                Speak With a Care Counselor
+              </a>
+            </div>
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Guaranteed Private Return</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Gentle Pickup Available</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">4,800+</span>
+                <span class="stat-label">Families Comforted</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-hero-image-wrap">
+            <img src="assets/images/services/services-hero.jpg" alt="A peaceful companion sleeping gently in soft light"
+              class="page-hero-img" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 2: Private & Communal Cremation (2 Differentiated Blocks)
+         =================================================================== -->
+    <!-- ===================================================================
+         SECTION 2: Editorial Service Packages & Comparison Matrix
+         =================================================================== -->
+    <section class="comparison-section section-padding" id="cremationServices">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Offerings</span>
+          <h2 class="section-title">Private &amp; Communal Cremation Pathways</h2>
+          <p class="section-desc">
+            Carefully curated aftercare options designed to provide peace of mind, closure, and sacred honor tailored to
+            your companion's memory.
+          </p>
+        </div>
+
+        <!-- Editorial Packages Showcase (4 Streamlined Spacious Options) -->
+        <div class="service-package-showcase">
+
+          <!-- Package 1: Private Cremation -->
+          <div class="package-card featured" id="privatePackageCard">
+            <div class="package-media-wrap">
+              <img src="assets/images/services_packages/pkg-1-private-cat-urn.png"
+                alt="Orange tabby cat sitting peacefully beside ruby red memorial paw urn" class="package-media-img"
+                loading="lazy">
+              <div class="package-floating-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <span>Most Chosen</span>
+              </div>
+            </div>
+            <div class="package-body">
+              <div class="package-top-meta">
+                <span class="package-kicker">
+                  Dedicated Individual Care
+                </span>
+                <div class="package-price-wrap">
+                  <span class="package-price">$195</span>
+                  <span class="package-price-sub">/ All-Inclusive</span>
+                </div>
+              </div>
+              <h3 class="package-title">Private Individual Pet Cremation</h3>
+              <p class="package-desc">
+                Your companion is cared for solo in a private chamber with 100% ashes returned and verified tracking.
+              </p>
+              <div class="package-features-grid">
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>100% Solo Chamber</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>All Ashes Returned</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>PawsTrack™ ID Disc</span>
+                </div>
+              </div>
+              <div class="package-action-row">
+                <a href="#contactModal" data-open-modal="contact" class="btn btn-primary">
+                  <span>Arrange Private Cremation</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                  <span>Ask a Question</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2: Communal Scattering -->
+          <div class="package-card" id="communalPackageCard">
+            <div class="package-media-wrap">
+              <img src="assets/images/services_packages/pkg-2-communal-meadow-dog.jpg"
+                alt="Happy dog running joyfully down blooming wildflower garden sanctuary meadow path"
+                class="package-media-img" loading="lazy">
+              <div class="package-floating-chip">
+                <span>Sanctuary Care</span>
+              </div>
+            </div>
+            <div class="package-body">
+              <div class="package-top-meta">
+                <span class="package-kicker" style="background-color: var(--secondary-light); color: var(--text-main);">
+                  Wildflower Sanctuary
+                </span>
+                <div class="package-price-wrap">
+                  <span class="package-price">$95</span>
+                  <span class="package-price-sub">/ All-Inclusive</span>
+                </div>
+              </div>
+              <h3 class="package-title">Communal Wildflower Garden Scattering</h3>
+              <p class="package-desc">
+                Remains are reverently scattered within our protected country botanical wildflower meadow.
+              </p>
+              <div class="package-features-grid">
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Meadow Scattering</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Signed Certificate</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Tribute Wall Inscription</span>
+                </div>
+              </div>
+              <div class="package-action-row">
+                <a href="#contactModal" data-open-modal="contact" class="btn btn-primary">
+                  <span>Arrange Communal Care</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="tribute-wall.html" class="btn btn-secondary">
+                  <span>Explore Tribute Wall →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3: Attended Farewell Experience -->
+          <div class="package-card" id="attendedPackageCard">
+            <div class="package-media-wrap">
+              <img src="assets/images/services_packages/pkg-3-attended-eco-casket.jpg"
+                alt="Classic cotton eco-friendly pet casket surrounded by caring animal companions"
+                class="package-media-img" loading="lazy">
+              <div class="package-floating-chip">
+                <span>Attended Placement</span>
+              </div>
+            </div>
+            <div class="package-body">
+              <div class="package-top-meta">
+                <span class="package-kicker" style="background-color: rgba(197, 160, 89, 0.16); color: #8C6A1E;">
+                  VIP Experience
+                </span>
+                <div class="package-price-wrap">
+                  <span class="package-price">$295</span>
+                  <span class="package-price-sub">/ All-Inclusive</span>
+                </div>
+              </div>
+              <h3 class="package-title">Attended Farewell &amp; Priority Cremation</h3>
+              <p class="package-desc">
+                Be present during placement with 60 minutes in our reflection suite and same-day ashes return.
+              </p>
+              <div class="package-features-grid">
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Witness Placement</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Private Farewell Suite</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Same-Day Return</span>
+                </div>
+              </div>
+              <div class="package-action-row">
+                <a href="#contactModal" data-open-modal="contact" class="btn btn-primary">
+                  <span>Book Attended Care</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="about.html" class="btn btn-secondary">
+                  <span>Tour Our Facility</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 4: Gentle Home Pickup -->
+          <div class="package-card" id="homePickupPackageCard">
+            <div class="package-media-wrap">
+              <img src="assets/images/services_packages/pkg-4-home-pickup-transport.jpg"
+                alt="Gentle pet transport specialists with vehicle carrier crate providing calm home pickup"
+                class="package-media-img" loading="lazy">
+              <div class="package-floating-chip">
+                <span>24/7 Mobile Dispatch</span>
+              </div>
+            </div>
+            <div class="package-body">
+              <div class="package-top-meta">
+                <span class="package-kicker" style="background-color: var(--primary-light); color: var(--deep-accent);">
+                  Home Comfort
+                </span>
+                <div class="package-price-wrap">
+                  <span class="package-price">$165</span>
+                  <span class="package-price-sub">/ Base Service</span>
+                </div>
+              </div>
+              <h3 class="package-title">Gentle 24/7 Home Pickup &amp; Transport</h3>
+              <p class="package-desc">
+                Caring team arrives at your residence with a lined velvet carrier for tranquil, reverent transport.
+              </p>
+              <div class="package-features-grid">
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>24/7 Home Dispatch</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Lined Velvet Carrier</span>
+                </div>
+                <div class="package-feature-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Chain-of-Custody ID</span>
+                </div>
+              </div>
+              <div class="package-action-row">
+                <a href="tel:18005557297" class="btn btn-primary">
+                  <span>Call 24/7 Mobile Dispatch</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                  <span>Check Radius &amp; Rates</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Comparison Matrix Table (All 4 Packages) -->
+        <div class="services-matrix-card">
+          <div class="matrix-header">
+            <h3 class="matrix-title">Detailed Service Comparison</h3>
+            <p class="matrix-subtitle">Compare all four pathways side-by-side to choose the exact level of presence and
+              comfort for your family.</p>
+          </div>
+          <div class="matrix-table-wrap">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th>Care Feature</th>
+                  <th>Private Cremation</th>
+                  <th>Communal Scattering</th>
+                  <th>Attended Experience</th>
+                  <th>Home Pickup Care</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="matrix-param">Chamber Allocation</td>
+                  <td class="matrix-highlight">100% Dedicated Solo Chamber</td>
+                  <td>Respectful Group Chamber</td>
+                  <td class="matrix-highlight">100% Dedicated Solo Chamber</td>
+                  <td>Private or Communal Choice</td>
+                </tr>
+                <tr>
+                  <td class="matrix-param">Cremated Remains</td>
+                  <td class="matrix-highlight">Returned in Keepsake Urn</td>
+                  <td>Scattered in Wildflower Meadow</td>
+                  <td class="matrix-highlight">Turned Walnut Urn (Same Day)</td>
+                  <td>Hand-Delivered to Home</td>
+                </tr>
+                <tr>
+                  <td class="matrix-param">Identification Tracking</td>
+                  <td>PawsTrack™ Stainless Serial Disc</td>
+                  <td>Certified Group Intake Log</td>
+                  <td>Direct Visual Attended Verification</td>
+                  <td>Strict Custody Transfer Log</td>
+                </tr>
+                <tr>
+                  <td class="matrix-param">Included Keepsakes</td>
+                  <td>Clay Paw Print &amp; Fur Lock</td>
+                  <td>Certificate of Remembrance</td>
+                  <td>2 Impressions, Fur Locks &amp; Urn</td>
+                  <td>Memorial Token &amp; Certificate</td>
+                </tr>
+                <tr>
+                  <td class="matrix-param">Farewell Suite Access</td>
+                  <td>Available by Request</td>
+                  <td>Sanctuary Garden Visitation</td>
+                  <td class="matrix-highlight">60-Min Private Suite Included</td>
+                  <td>In-Home Farewell Transfer</td>
+                </tr>
+                <tr>
+                  <td class="matrix-param">All-Inclusive Cost</td>
+                  <td class="matrix-highlight">$195 Fixed</td>
+                  <td class="matrix-highlight">$95 Fixed</td>
+                  <td class="matrix-highlight">$295 Fixed</td>
+                  <td class="matrix-highlight">$165 + Care Plan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: Memorial Keepsakes & Urns (Product-Style Cards)
+         =================================================================== -->
+    <section class="keepsakes-section section-padding" id="serviceKeepsakes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Handcrafted Remembrances</span>
+          <h2 class="section-title">Memorial Keepsakes &amp; Urns</h2>
+          <p class="section-desc">
+            Artisan vessels, memorial jewelry, and tangible impression keepsakes to celebrate an eternal bond.
+          </p>
+        </div>
+
+        <div class="collection-grid">
+          <!-- Item 1: Parrot Urn -->
+          <div class="collection-item-card" id="servItem1">
+            <div class="collection-thumb">
+              <img src="assets/images/services_keepsakes/serv-keepsake-1-parrot-urn.jpg"
+                alt="Artisan painted flying macaw parrot memorial urn with protective velvet pouch" width="600"
+                height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Flying Spirit Painted Urn</h3>
+              <p class="collection-desc">
+                Handcrafted engraved metal cremation urn featuring flying bird art with protective velvet pouch.
+              </p>
+              <div class="collection-action-row">
+                <span class="collection-price">$145.00</span>
+                <button class="btn-keepsake-order" data-open-modal="contact">Inquire</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Photo Frame Urn & Angel Cat -->
+          <div class="collection-item-card" id="servItem2">
+            <div class="collection-thumb">
+              <img src="assets/images/services_keepsakes/serv-keepsake-2-cat-angel-frame.jpg"
+                alt="Mahogany photo box urn with resting celestial sleeping cat sculpture" width="600" height="450"
+                loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Photo Box Urn </h3>
+              <p class="collection-desc">
+                Mahogany finished memorial photo frame box accompanied by a delicately sculpted sleeping angel
+                companion.
+              </p>
+              <div class="collection-action-row">
+                <span class="collection-price">$125.00</span>
+                <button class="btn-keepsake-order" data-open-modal="contact">Inquire</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Custom Sculpted Urn -->
+          <div class="collection-item-card" id="servItem3">
+            <div class="collection-thumb">
+              <img src="assets/images/services_keepsakes/serv-keepsake-3-custom-sculpt-urn.jpg"
+                alt="Custom hand-modeled 3D pet portrait ceramic memorial vessel" width="600" height="450"
+                loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Custom 3D Pet Portrait Vessel</h3>
+              <p class="collection-desc">
+                Artisan ceramic canister with bamboo lid customized with hand-sculpted 3D lifelike portrait relief of
+                your pet.
+              </p>
+              <div class="collection-action-row">
+                <span class="collection-price">$185.00</span>
+                <button class="btn-keepsake-order" data-open-modal="contact">Inquire</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Memorial Shadow Box -->
+          <div class="collection-item-card" id="servItem4">
+            <div class="collection-thumb">
+              <img src="assets/images/services_keepsakes/serv-keepsake-4-shadow-box-collar.jpg"
+                alt="Handcrafted wooden shadow box keepsake cabinet with photo, collar hook, and paw print impression"
+                width="600" height="450" loading="lazy">
+            </div>
+            <div class="collection-body">
+              <h3 class="collection-title">Memory Keep Shadow Box </h3>
+              <p class="collection-desc">
+                Artisan rustic wood keepsake cabinet with glass door, collar pin, photo mount, clay impression, and
+                glass vial.
+              </p>
+              <div class="collection-action-row">
+                <span class="collection-price">$95.00</span>
+                <button class="btn-keepsake-order" data-open-modal="contact">Inquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="memorial-keepsakes.html" class="btn btn-secondary">
+            Explore Full Keepsakes &amp; Urn Catalog →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: Our Care Process (Service Journey Visually)
+         =================================================================== -->
+    <section class="process-section section-padding" id="serviceProcess">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-content">
+            <span class="section-tag">Step-by-Step Pathway</span>
+            <h2 class="split-title">A Respectful Journey From First Call to Final Embrace</h2>
+            <p class="split-desc">
+              We understand how overwhelming grief can feel. Our four-step care journey ensures you are supported with
+              absolute clarity, empathy, and constant communication.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-icon-bullet">1</div>
+                <div>
+                  <h4>Gentle Intake &amp; Comfort Transportation</h4>
+                  <p>Our compassionate team arrives at your residence or veterinary clinic in an unbranded, respectful
+                    vehicle with soft blankets.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon-bullet">2</div>
+                <div>
+                  <h4>Individual Identification &amp; Sanctuary Suite</h4>
+                  <p>A unique PawsTrack™ serial disc is assigned and stays with your pet throughout every single phase
+                    of aftercare.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon-bullet">3</div>
+                <div>
+                  <h4>Dedicated Care &amp; Keepsake Crafting</h4>
+                  <p>Private or communal cremation is performed with utmost reverent care, and chosen paw prints or
+                    jewelry are meticulously prepared.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon-bullet">4</div>
+                <div>
+                  <h4>Dignified Return or Meadow Scatter</h4>
+                  <p>Ashes and custom keepsakes are hand-delivered to your door in an elegant presentation box, or
+                    scattered in our flower meadow.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-media-wrapper">
+            <div class="split-image-card">
+              <img src="assets/images/services/service-journey-embrace.png"
+                alt="Gentle caregiver with companion pet prepared for respectful journey" width="800" height="600"
+                loading="lazy">
+            </div>
+            <div class="split-quote-badge">
+              <div class="quote-stars">★★★★★</div>
+              <p class="quote-text">"Every detail was handled with pure love, giving our family true peace of mind."</p>
+              <span class="quote-author">— Mark &amp; Jennifer K.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 5: Compassionate Support CTA
+         =================================================================== -->
+    <section class="cta-section section-padding" id="servicesCta">
+      <div class="container">
+        <div class="cta2-banner" style="background-image: url('assets/images/services/services-cta-bg.jpg');">
+          <div class="cta2-overlay"></div>
+          <div class="cta2-content">
+            <span class="section-tag"
+              style="background:rgba(255,255,255,0.2); color:#FFFFFF; border:1px solid rgba(255,255,255,0.3);">
+              🕊️ 24/7 Bereavement Counseling &amp; Intake
+            </span>
+            <h2 class="cta2-title">We Are Here When You Need Us Most</h2>
+            <p class="cta2-text">
+              Reach out to our certified pet aftercare directors anytime day or night. We will gently guide you through
+              every choice with compassion and respect.
+            </p>
+            <div class="cta2-actions">
+              <a href="#contactModal" data-open-modal="contact" class="btn btn-primary"
+                style="background:#FFFFFF; color:var(--deep-accent); border-color:#FFFFFF;">
+                Request Immediate Care
+              </a>
+              <a href="tel:8005557297" class="btn btn-secondary"
+                style="background:rgba(255,255,255,0.15); color:#FFFFFF; border-color:rgba(255,255,255,0.35);">
+                Call (800) 555-PAWS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       Site Footer
+       =================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Emergency -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="Everlasting Paws Home">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z" />
+                <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+              </svg>
+            </div>
+            <div class="brand-text">Everlasting<span>Paws</span></div>
+          </a>
+          <p class="footer-desc">
+            Providing compassionate, certified pet cremation, memorial keepsakes, and tribute services. Dedicated to
+            honoring the profound love between humans and animals.
+          </p>
+          <div class="emergency-notice">
+            <div class="notice-badge">24/7 Immediate Help</div>
+            <a href="tel:18005557297" class="notice-phone">1-800-555-PAWS (7297)</a>
+            <span class="notice-sub">Available for residential and veterinary transfers</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation & Pages -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Classic)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Serene)</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="tribute-wall.html" class="footer-link">Tribute Wall</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Memorial Keepsakes</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Keepsakes -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#privateServiceCard" class="footer-link">Private Cremation</a></li>
+            <li><a href="services.html#communalServiceCard" class="footer-link">Communal Cremation</a></li>
+            <li><a href="services.html#serviceProcess" class="footer-link">Farewell Viewing Suites</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Paw Print Keepsakes</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Memorial Jewelry</a></li>
+            <li><a href="memorial-keepsakes.html#urnCollectionSection" class="footer-link">Handcrafted Urns</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Support -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact &amp; Care</h4>
+          <div class="footer-contact-info">
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>4820 Serenity Meadow Way, Austin, TX 78746</span>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <a href="tel:18005557297">1-800-555-PAWS (7297)</a>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:care@everlastingpaws.org">care@everlastingpaws.org</a>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Daily Intake: 8:00 AM &ndash; 8:00 PM</span>
+            </div>
+            <div class="footer-portal-links">
+              <a href="login.html" class="footer-link">Family Portal Login</a>
+              <span class="divider">&bull;</span>
+              <a href="register.html" class="footer-link">Register Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Everlasting Paws Pet Cremation &amp; Memorial Services. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Care</a>
+          <a href="about.html">Pet Loss Grief Resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       Quick Care & Consultation Modal
+       =================================================================== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h3 class="modal-title">Gentle Care & Consultation</h3>
+      <p class="modal-desc">Leave your details and our care director will reach out promptly with warmth and support.
+      </p>
+      <form class="modal-form">
+        <div class="form-group">
+          <label for="petParentName">Your Name</label>
+          <input type="text" id="petParentName" class="form-control" placeholder="e.g. Eleanor Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="contactPhone">Phone / Email</label>
+          <input type="text" id="contactPhone" class="form-control" placeholder="e.g. (555) 234-5678 or email" required>
+        </div>
+        <div class="form-group">
+          <label for="petNameModal">Pet's Name & Type</label>
+          <input type="text" id="petNameModal" class="form-control" placeholder="e.g. Barnaby (Golden Retriever)">
+        </div>
+        <div class="form-group">
+          <label for="serviceInterest">Service of Interest</label>
+          <select id="serviceInterest" class="form-control">
+            <option value="private">Private Cremation</option>
+            <option value="communal">Communal Garden Scattering</option>
+            <option value="keepsakes">Memorial Keepsakes & Jewelry</option>
+            <option value="viewing">Private Viewing & Farewell</option>
+            <option value="preplanning">Gentle Pre-Planning</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+          Send Gentle Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+
+</html>

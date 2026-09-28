@@ -1,0 +1,1139 @@
+/* ===================================================================
+   Template 10: Pet Cremation & Memorial Service
+   responsive.css — Dedicated Responsive Stylesheet & Media Queries
+   Breakpoints: 200px - 2560px+
+   =================================================================== */
+
+/* -------------------------------------------------------------
+   Large Screens & Desktops (>= 1440px)
+   ------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  .page-hero-grid, .hero-grid, .hero2-grid {
+    gap: 64px;
+  }
+}
+
+/* -------------------------------------------------------------
+   Standard Desktop & Large Tablet Boundary (<= 1180px)
+   ------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .desktop-nav {
+    gap: 12px;
+  }
+  .nav-link {
+    font-size: 0.88rem;
+    padding: 6px 0;
+  }
+}
+
+/* -------------------------------------------------------------
+   Tablet / iPad Viewports (<= 1140px)
+   CRITICAL: Navbar contains ONLY Logo + Theme + RTL + Hamburger
+   ------------------------------------------------------------- */
+@media (max-width: 1140px) {
+  /* Strictly hide all desktop navigation links and standalone buttons on tablet & mobile */
+  .desktop-nav,
+  .login-nav-link,
+  #headerLoginBtn,
+  .header-actions > .btn,
+  .header-actions > .nav-cta-btn,
+  #headerConsultBtn,
+  #headerHotlineBtn {
+    display: none !important;
+  }
+
+  /* Display Hamburger icon */
+  .menu-toggle,
+  .hamburger-btn {
+    display: inline-flex !important;
+  }
+
+  /* Grids: 2-column balanced tablet layouts */
+  .care-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .keepsakes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 20px;
+  }
+
+  .process-grid::before {
+    display: none;
+  }
+
+  .journey2-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .keepsakes-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .urn-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+
+  .page-hero-grid,
+  .hero-grid,
+  .hero2-grid,
+  .split-grid,
+  .comparison-grid,
+  .process2-grid,
+  .personalization-grid,
+  .cta-banner-grid,
+  .cta-box,
+  .cta2-box {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .page-hero-content,
+  .hero-content {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  [dir="rtl"] .page-hero-content,
+  [dir="rtl"] .hero-content {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .hero-badge,
+  .page-hero-tag,
+  .section-tag,
+  .badge,
+  .hero2-badge {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .hero-title,
+  .page-hero-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .page-hero-desc,
+  .hero-text {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .page-hero-actions,
+  .hero-actions {
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .hero-trust-bar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 580px !important;
+  }
+
+  .trust-avatars {
+    justify-content: center !important;
+  }
+
+  .hero-stats-row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .page-hero-image-wrap,
+  .hero-media-wrapper,
+  .split-media-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .stories2-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .cta-banner-media {
+    min-height: 240px;
+  }
+
+  .package-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .package-media-wrap {
+    min-height: 220px;
+    aspect-ratio: 16/9;
+  }
+}
+
+/* -------------------------------------------------------------
+   Auth Responsive Layouts (<= 900px)
+   Image/Visual Banner ALWAYS positioned on TOP on mobile/tablet
+   ------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .auth-split-layout,
+  .auth-split-layout.auth-reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    min-height: 100vh !important;
+  }
+
+  .auth-visual-pane {
+    order: -1 !important;
+    width: 100% !important;
+    min-height: 250px !important;
+    padding: 28px 20px !important;
+  }
+
+  .auth-form-pane {
+    order: 1 !important;
+    width: 100% !important;
+    padding: 36px 18px !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   Medium Tablet & Phablets (<= 820px)
+   ------------------------------------------------------------- */
+@media (max-width: 820px) {
+  .hero-floating-card,
+  .split-quote-badge,
+  .hero2-glow-card,
+  .personalization-tag-card,
+  .map-info-floating-card,
+  .tag-card,
+  .expect-step-badge,
+  .service-badge,
+  .urn-type-badge {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    margin: 14px auto 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+  }
+
+  .tributes-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-actions {
+    justify-content: center;
+  }
+}
+
+/* -------------------------------------------------------------
+   Mobile Viewports: 200px – 767px (Single Column Standard)
+   ------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .care-grid,
+  .services-grid,
+  .keepsakes-grid,
+  .process-grid,
+  .tributes-grid,
+  .hero-stats-row,
+  .hero2-metrics,
+  .journey2-grid,
+  .comparison-grid,
+  .collection-grid,
+  .process2-grid,
+  .stories2-grid,
+  .contact-info-grid,
+  .keepsakes-cards-grid,
+  .urn-grid,
+  .expectations-grid,
+  .footer-grid,
+  .form-grid-2,
+  .hero-grid,
+  .hero2-grid,
+  .split-grid,
+  .page-hero-grid,
+  .personalization-grid,
+  .cta-banner-grid,
+  .cta-box,
+  .cta2-box {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .card,
+  .care-card,
+  .service-card,
+  .keepsake-card,
+  .keepsake-product-card,
+  .urn-card,
+  .tribute-card,
+  .journey2-card,
+  .compare-card,
+  .collection-card,
+  .process2-step,
+  .story2-card,
+  .contact-info-card,
+  .expect-card,
+  .footer-col,
+  .hero-image-card,
+  .split-media-card,
+  .form-wrapper-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .care-card-title,
+  .service-title,
+  .keepsake-title,
+  .keepsake-card-title,
+  .urn-title,
+  .info-card-title,
+  .expect-title,
+  .journey2-title,
+  .collection-title {
+    min-height: auto !important;
+  }
+
+  .care-card-text,
+  .service-text,
+  .keepsake-text,
+  .keepsake-card-desc,
+  .urn-desc,
+  .info-card-desc,
+  .expect-desc,
+  .journey2-desc,
+  .collection-desc {
+    min-height: auto !important;
+  }
+
+  .btn {
+    white-space: normal !important;
+    text-align: center;
+    max-width: 100%;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    line-height: 1.3 !important;
+  }
+
+  .btn svg {
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+  }
+
+  .hero-actions,
+  .page-hero-actions,
+  .cta-actions,
+  .cta2-actions,
+  .hero2-actions,
+  .personalization-cta-row,
+  .form-submit-row {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+  }
+
+  .hero-actions .btn,
+  .page-hero-actions .btn,
+  .cta-actions .btn,
+  .cta2-actions .btn,
+  .hero2-actions .btn,
+  .personalization-cta-row .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .form-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto 28px auto !important;
+    width: 100% !important;
+  }
+
+  .form-header .badge {
+    margin: 0 auto 12px auto !important;
+    align-self: center !important;
+  }
+
+  .form-header .section-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .form-header .section-subtitle {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .form-submit-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding-top: 20px !important;
+  }
+
+  .form-submit-row .btn {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 12px;
+    padding-top: 18px !important;
+    margin-top: 0 !important;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* 1. Hero Trust Bar Mobile Alignment */
+  .hero-trust-bar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 10px !important;
+    margin: 20px auto 0 !important;
+    padding-top: 18px !important;
+    width: 100% !important;
+    max-width: 360px !important;
+  }
+
+  .trust-avatars {
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  .trust-info {
+    text-align: center !important;
+    font-size: 0.86rem !important;
+  }
+
+  .trust-info strong {
+    text-align: center !important;
+    display: block !important;
+    margin-bottom: 3px !important;
+    font-size: 0.94rem !important;
+  }
+
+  .trust-info span {
+    text-align: center !important;
+    display: block !important;
+    font-size: 0.82rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* 2. Tributes Action Buttons Alignment */
+  .tributes-action-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 28px auto 0 !important;
+    padding: 0 12px !important;
+  }
+
+  .tributes-action-row .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* 3. Footer Portal Links & Clean Spacing */
+  .footer-grid {
+    margin-bottom: 20px !important;
+    gap: 24px !important;
+  }
+
+  .footer-contact-info {
+    gap: 10px !important;
+  }
+
+  .footer-portal-links {
+    margin-top: 6px !important;
+    padding-top: 8px !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 0.84rem !important;
+  }
+
+  /* 4. Hero Pill Badge Text & Icon Centering (Inner Pages & All Sections) */
+  .page-hero .badge,
+  .hero-badge,
+  .page-hero-tag,
+  .section-tag,
+  .badge,
+  .badge-accent,
+  .badge-primary,
+  .hero2-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    max-width: 95vw !important;
+    font-size: clamp(0.62rem, 2.7vw, 0.76rem) !important;
+    padding: 5px 12px !important;
+    gap: 5px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 18px !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .badge svg,
+  .badge-accent svg,
+  .badge-primary svg,
+  .hero-badge svg,
+  .page-hero-tag svg {
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin: 0 !important;
+  }
+
+  [dir="rtl"] .badge svg,
+  [dir="rtl"] .hero-badge svg,
+  [dir="rtl"] .page-hero-tag svg {
+    margin: 0 !important;
+  }
+
+  /* Form Privacy Note Centering */
+  .form-privacy-note {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 8px !important;
+    font-size: 0.82rem !important;
+    color: var(--text-muted) !important;
+    line-height: 1.4 !important;
+    margin: 8px auto 0 !important;
+    width: 100% !important;
+    max-width: 380px !important;
+  }
+
+  .form-privacy-note svg {
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+  }
+
+  /* 5. Story Card Author & Candle Button Alignment */
+  .story-author-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    width: 100% !important;
+    margin-top: 14px !important;
+  }
+
+  .story-author-row .story-author-name {
+    font-size: 0.95rem !important;
+  }
+
+  .story-author-row .candle-btn {
+    align-self: flex-start !important;
+    white-space: nowrap !important;
+  }
+
+  /* Modal Form: Centered, Content-Fitted, Zero Unwanted Scroll/Empty Space */
+  .modal-overlay {
+    padding: 14px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow-y: auto !important;
+  }
+
+  .modal-card {
+    padding: 22px 18px 20px !important;
+    border-radius: var(--radius-xl) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 94vh !important;
+    max-height: 94dvh !important;
+    margin: auto !important;
+    width: 100% !important;
+    max-width: 440px !important;
+    box-sizing: border-box !important;
+  }
+
+  .modal-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 4px !important;
+    padding-right: 32px !important;
+  }
+
+  .modal-desc {
+    font-size: 0.82rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .modal-form {
+    gap: 10px !important;
+  }
+
+  .modal-form .form-group {
+    margin-bottom: 0 !important;
+    gap: 3px !important;
+  }
+
+  .modal-form .form-group label {
+    font-size: 0.78rem !important;
+  }
+
+  .modal-form .form-control,
+  .modal-form .custom-select-trigger {
+    height: 40px !important;
+    padding: 6px 12px !important;
+    font-size: 0.86rem !important;
+  }
+
+  .modal-form .btn {
+    padding: 11px 16px !important;
+    font-size: 0.9rem !important;
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   Standard Mobile Phones (<= 480px)
+   ------------------------------------------------------------- */
+@media (max-width: 480px) {
+  :root {
+    --container-pad: 14px;
+  }
+
+  .section-padding {
+    padding-top: clamp(36px, 8vw, 54px);
+    padding-bottom: clamp(36px, 8vw, 54px);
+  }
+
+  .header-inner {
+    height: 64px;
+    gap: 8px;
+  }
+
+  .brand-logo {
+    font-size: 1.15rem;
+    gap: 8px;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .theme-toggle, .icon-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .rtl-toggle {
+    height: 36px;
+    padding: 0 9px;
+    font-size: 0.74rem;
+  }
+
+  .menu-toggle, .hamburger-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-title, .page-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .mobile-drawer {
+    width: min(90vw, 320px);
+    padding: 20px;
+  }
+
+  .auth-form-card {
+    padding: 24px 16px;
+  }
+}
+
+/* -------------------------------------------------------------
+   iPhone SE & Small Mobile (<= 375px)
+   CRITICAL: Guaranteed Zero Overflow at 375px
+   ------------------------------------------------------------- */
+@media (max-width: 375px) {
+  :root {
+    --container-pad: 12px;
+  }
+
+  .header-inner {
+    height: 60px;
+    gap: 6px;
+  }
+
+  .brand-logo {
+    font-size: 1.05rem;
+    gap: 6px;
+  }
+
+  .brand-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .brand-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .theme-toggle, .icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .theme-toggle svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .rtl-toggle {
+    height: 32px;
+    padding: 0 7px;
+    font-size: 0.7rem;
+  }
+
+  .menu-toggle, .hamburger-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .menu-toggle svg, .hamburger-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero-title, .page-hero-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.38rem;
+  }
+
+  .page-hero .badge,
+  .hero-badge,
+  .section-tag,
+  .badge,
+  .badge-accent,
+  .badge-primary,
+  .page-hero-tag {
+    font-size: 0.62rem !important;
+    padding: 4px 10px !important;
+    white-space: nowrap !important;
+    max-width: 95vw !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .care-card, .service-card, .keepsake-card, .keepsake-product-card, .urn-card, .contact-info-card, .expect-card {
+    padding: 18px;
+  }
+
+  .form-wrapper-card {
+    padding: 20px 14px;
+  }
+}
+
+/* -------------------------------------------------------------
+   Compact Mobile (<= 320px)
+   ------------------------------------------------------------- */
+@media (max-width: 320px) {
+  :root {
+    --container-pad: 8px;
+  }
+
+  .header-inner {
+    height: 56px;
+    gap: 5px;
+  }
+
+  .brand-logo {
+    font-size: 0.95rem;
+    gap: 5px;
+  }
+
+  .brand-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .brand-icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .theme-toggle, .icon-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .theme-toggle svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .rtl-toggle {
+    height: 28px;
+    padding: 0 5px;
+    font-size: 0.65rem;
+  }
+
+  .menu-toggle, .hamburger-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-toggle svg, .hamburger-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero-title, .page-hero-title {
+    font-size: 1.45rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.88rem;
+  }
+
+  .hero-trust-bar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tribute-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* -------------------------------------------------------------
+   Extra Small / Foldable Outer (<= 280px)
+   ------------------------------------------------------------- */
+@media (max-width: 280px) {
+  :root {
+    --container-pad: 6px;
+  }
+
+  .header-inner {
+    height: 52px;
+    gap: 4px;
+  }
+
+  .brand-logo {
+    font-size: 0.88rem;
+    gap: 4px;
+  }
+
+  .brand-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .brand-icon svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .header-actions {
+    gap: 4px;
+  }
+
+  .theme-toggle, .icon-btn {
+    width: 26px;
+    height: 26px;
+  }
+
+  .theme-toggle svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .rtl-toggle {
+    height: 26px;
+    padding: 0 4px;
+    font-size: 0.6rem;
+  }
+
+  .menu-toggle, .hamburger-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero-title, .page-hero-title {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 1.15rem;
+  }
+
+  .mobile-drawer {
+    width: 96vw;
+    padding: 14px;
+  }
+}
+
+/* -------------------------------------------------------------
+   Micro Viewports (<= 240px)
+   ------------------------------------------------------------- */
+@media (max-width: 240px) {
+  :root {
+    --container-pad: 4px;
+  }
+
+  .header-inner {
+    height: 48px;
+    gap: 3px;
+  }
+
+  .brand-logo {
+    font-size: 0.8rem;
+    gap: 3px;
+  }
+
+  .brand-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .brand-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .header-actions {
+    gap: 3px;
+  }
+
+  .theme-toggle, .icon-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .theme-toggle svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .rtl-toggle {
+    height: 24px;
+    padding: 0 3px;
+    font-size: 0.56rem;
+  }
+
+  .menu-toggle, .hamburger-btn {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero-title, .page-hero-title {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.05rem;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* -------------------------------------------------------------
+   Extreme 200px Viewport (<= 200px)
+   CRITICAL REQUIREMENT: Guaranteed Complete Layout Fit at 200px
+   ------------------------------------------------------------- */
+@media (max-width: 200px) {
+  :root {
+    --container-pad: 3px;
+  }
+
+  .header-inner {
+    height: 44px;
+    gap: 2px;
+  }
+
+  .brand-logo {
+    font-size: 0.72rem;
+    gap: 2px;
+  }
+
+  .brand-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .brand-icon svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .header-actions {
+    gap: 2px;
+  }
+
+  .theme-toggle, .icon-btn {
+    width: 22px;
+    height: 22px;
+  }
+
+  .theme-toggle svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .rtl-toggle {
+    height: 22px;
+    padding: 0 2px;
+    font-size: 0.52rem;
+  }
+
+  .menu-toggle, .hamburger-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu-toggle svg, .hamburger-btn svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .hero-title, .page-hero-title {
+    font-size: 1.08rem;
+  }
+
+  .section-title {
+    font-size: 0.98rem;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.74rem;
+  }
+
+  .care-card, .service-card, .keepsake-card, .keepsake-product-card, .urn-card, .contact-info-card, .expect-card {
+    padding: 12px 8px;
+  }
+
+  .mobile-drawer {
+    width: 98vw;
+    padding: 10px;
+  }
+}

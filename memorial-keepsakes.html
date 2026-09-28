@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memorial Keepsakes & Custom Urns — Handcrafted paw prints, cremation jewelry, personalized memory boxes, and artisan vessels to cherish your companion forever.">
+  <meta name="keywords" content="pet memorial keepsakes, paw print keepsake, pet cremation jewelry, pet urns, pet memory box, pet remembrance items">
+  <title>Memorial Keepsakes &amp; Urns — Everlasting Paws | Cherished Remembrances</title>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core CSS & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Page Preloader -->
+  <div class="page-preloader" id="pagePreloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-icon-wrap">
+        <svg class="preloader-paw" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+          <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"/>
+          <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"/>
+          <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"/>
+        </svg>
+        <div class="preloader-ring"></div>
+      </div>
+      <div class="preloader-text">Everlasting<span>Paws</span></div>
+      <div class="preloader-line"></div>
+    </div>
+  </div>
+
+
+  <!-- ===================================================================
+       Site Header / Navigation
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" id="mainLogo" aria-label="Everlasting Paws Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+              <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            </svg>
+          </div>
+          <div class="brand-text">Everlasting<span>Paws</span></div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <!-- Home Dropdown -->
+          <div class="nav-dropdown" id="homeDropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true" id="homeDropdownBtn">
+              Home
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="homeDropdownBtn">
+              <a href="index.html" class="dropdown-item" id="navHome1">
+                <span>Home 1 (Classic)</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item" id="navHome2">
+                <span>Home 2 (Serene)</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="services.html" class="nav-link" id="navServices">Services</a>
+          <a href="tribute-wall.html" class="nav-link" id="navTributes">Tribute Wall</a>
+          <a href="memorial-keepsakes.html" class="nav-link active" id="navKeepsakes">Memorial Keepsakes</a>
+          <a href="about.html" class="nav-link" id="navAbout">About Us</a>
+          <a href="contact.html" class="nav-link" id="navContact">Contact</a>
+        </nav>
+
+        <!-- Header Actions: Theme, RTL, Login Button, Care Hotline Button & Hamburger -->
+        <div class="header-actions">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- RTL / LTR Toggle -->
+          <button class="rtl-toggle" id="rtlToggleBtn" aria-label="Toggle text direction" title="Toggle RTL/LTR">RTL</button>
+
+          <!-- Login Button -->
+          <a href="login.html" class="btn btn-secondary btn-sm" id="headerLoginBtn" style="padding: 7px 16px;">
+            Login
+          </a>
+
+          <!-- Quick Consultation Action -->
+          <a href="#contactModal" data-open-modal="contact" class="btn btn-primary btn-sm" id="headerConsultBtn">
+            Care Hotline
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button class="menu-toggle" id="mobileMenuBtn" aria-label="Open Navigation Drawer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Mobile & Tablet Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+              <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            </svg>
+          </div>
+          <div class="brand-text">Everlasting<span>Paws</span></div>
+        </a>
+        <button class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <div class="drawer-dropdown" id="drawerHomeDropdown">
+          <button class="drawer-dropdown-btn" id="drawerHomeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home Pages</span>
+            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="drawer-subnav">
+            <a href="index.html" class="drawer-sublink">• Home 1 (Classic)</a>
+            <a href="home-2.html" class="drawer-sublink">• Home 2 (Serene)</a>
+          </div>
+        </div>
+        <a href="services.html" class="drawer-link">Services</a>
+        <a href="tribute-wall.html" class="drawer-link">Tribute Wall</a>
+        <a href="memorial-keepsakes.html" class="drawer-link active">Memorial Keepsakes</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+        <a href="login.html" class="drawer-link" style="border-top: 1px solid var(--surface-border); margin-top: 4px; padding-top: 14px;">Family Login</a>
+        <a href="register.html" class="drawer-link">Create Account</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="#contactModal" data-open-modal="contact" class="btn btn-primary" id="drawerConsultBtn" style="width: 100%;">
+          Care Hotline
+        </a>
+        <div class="drawer-controls">
+          <button class="drawer-theme-btn" id="drawerThemeToggle" aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <span class="theme-text">Dark Mode</span>
+          </button>
+          <button class="rtl-toggle" id="drawerRtlToggle" aria-label="Toggle text direction">RTL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ===================================================================
+         SECTION 1: Memorial Keepsakes Hero
+         =================================================================== -->
+    <section class="page-hero" id="keepsakesHero">
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <div class="badge badge-accent">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span>Artisan Memorials &bull; Handcrafted With Love</span>
+            </div>
+            <h1 class="page-hero-title">Timeless Keepsakes &amp; Urns To Honor Your Beloved Companion</h1>
+            <p class="page-hero-desc">
+              Transform cherished moments into enduring physical heirlooms. From artisan ceramic vessels and sterling silver cremation pendants to custom laser-engraved memory boxes, find a meaningful comfort that keeps their presence close.
+            </p>
+            <div class="page-hero-actions">
+              <a href="#keepsakeCollectionSection" class="btn btn-primary" id="heroExploreKeepsakesBtn">
+                <span>Explore Keepsake Collection</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+              <a href="#urnCollectionSection" class="btn btn-secondary" id="heroExploreUrnsBtn">View Urn Gallery</a>
+            </div>
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Handcrafted &amp; Inspected</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">Custom</span>
+                <span class="stat-label">Laser Inscribed Names</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">Eco-Safe</span>
+                <span class="stat-label">Biodegradable Options</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-hero-image-wrap">
+            <img src="assets/images/keepsakes/keepsakes-hero.jpg" alt="Custom engraved wooden pet keepsake box with photo frame and glass fur vial" class="page-hero-img" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 2: Keepsake Collection
+         =================================================================== -->
+    <section class="section-spacing bg-surface" id="keepsakeCollectionSection">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge badge-primary">Heirlooms &amp; Mementos</div>
+          <h2 class="section-title">The Memorial Keepsake Collection</h2>
+          <p class="section-subtitle">
+            Every piece is gently crafted by master artisans to create a tactile connection with the pet who gave you unconditional love.
+          </p>
+        </div>
+
+        <div class="keepsakes-cards-grid">
+          <!-- Item 1: Paw Print Keepsake -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-paw-print.jpg" alt="Hand-stamped clean ink paw print keepsake on archival paper beside dog paw" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Most Cherished</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Tactile Memorial</span>
+                <span class="product-price">From $65</span>
+              </div>
+              <h3 class="keepsake-card-title">Hand-Pressed Ink &amp; Clay Paw Imprint</h3>
+              <p class="keepsake-card-desc">Exact dimensional paw impression captured in archival ink with custom engraved brass nameplate.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=paw-print" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Handcrafted Memory Box -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-memory-box.png" alt="Black photo memorial urn box with golden tree and sleeping cat angel sculpture" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Artisan Tribute</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Memorial Urn Box</span>
+                <span class="product-price">From $125</span>
+              </div>
+              <h3 class="keepsake-card-title">Celestial Angel &amp; Photo Urn Box</h3>
+              <p class="keepsake-card-desc">Fine black hardwood keepsake box featuring gold tree engraving, photo window, and resting angel sculpture.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=memory-box" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Memorial Jewelry -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-jewelry-pendant.jpg" alt="Sterling silver memorial ring with paw print, heart crystal and kitten tribute" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Wearable Tribute</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Fine Jewelry</span>
+                <span class="product-price">From $95</span>
+              </div>
+              <h3 class="keepsake-card-title">Always In My Heart Silver Ring</h3>
+              <p class="keepsake-card-desc">Solid 925 sterling silver wrap ring engraved with paw emblem, sentiment band, and glowing heart crystal.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=jewelry" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Photo Memorial Frame -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-photo-frame.png" alt="Square shadowbox frame with portrait photo of child hugging golden retriever and collar display" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Dual Display</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Wall &amp; Desk Frame</span>
+                <span class="product-price">From $75</span>
+              </div>
+              <h3 class="keepsake-card-title">Companion Portrait</h3>
+              <p class="keepsake-card-desc">Clean gallery shadowbox frame designed to display your companion's photo alongside their original collar.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=photo-frame" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Custom Engraved Plaque & Garden Statue -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-custom-plaque.jpg" alt="Weatherproof bronze and slate memorial cat garden statue on natural tree stump" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Garden &amp; Outdoor</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Garden Bronze Sculpture</span>
+                <span class="product-price">From $85</span>
+              </div>
+              <h3 class="keepsake-card-title">Weatherproof Slate &amp; Bronze Plaque</h3>
+              <p class="keepsake-card-desc">Weatherproof bronze finished companion sculpture and slate marker crafted for outdoor memorial spaces.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=memorial-plaque" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Glass Memory Touchstone -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-glass-touchstone.png" alt="Crystal clear paw-shaped photo keepsake with companion dog high five portrait" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Crystal Touchstone</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Crystal Acrylic Paw</span>
+                <span class="product-price">From $90</span>
+              </div>
+              <h3 class="keepsake-card-title">Handmade Glass Memory Touchstone</h3>
+              <p class="keepsake-card-desc">Polished beveled crystal paw heirloom laser-embedded with your companion's high-definition portrait.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=glass-touchstone" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7: Celestial Ash-Infused Glass Orb -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-celestial-glass-orb.png" alt="Celestial ocean blue spiral glass memorial touchstone sphere with companion portrait" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Glass Artistry</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Hand-Blown Glass</span>
+                <span class="product-price">From $135</span>
+              </div>
+              <h3 class="keepsake-card-title">Celestial Swirl Glass Memorial Touchstone</h3>
+              <p class="keepsake-card-desc">Hand-blown crystal blue and silver swirl memorial sphere infused with companion essence in remembrance of cherished friends.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=glass-orb" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8: Artisan Clay Paw Impression Frame -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-rocky-clay-frame.png" alt="Black shadowbox gallery frame with twin companion clay paw impressions and nameplate" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Clay &amp; Wood</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Shadowbox Frame</span>
+                <span class="product-price">From $65</span>
+              </div>
+              <h3 class="keepsake-card-title">Rocky Double Paw Impression Shadowbox</h3>
+              <p class="keepsake-card-desc">Solid black gallery frame displaying twin companion clay paw impressions alongside an engraved tribute nameplate and memorial portrait.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=clay-frame" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9: Custom Photo Engraved Lockets -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-photo-engraved-lockets.png" alt="Personalized laser photo engraved memorial locket necklaces in gold, rose gold and silver" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Personalized Jewelry</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Memorial Jewelry</span>
+                <span class="product-price">From $110</span>
+              </div>
+              <h3 class="keepsake-card-title">Custom Photo Engraved Memorial Lockets</h3>
+              <p class="keepsake-card-desc">Chambered stainless steel and precious metal locket pendants laser-engraved with your companion's custom photo portrait.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=heart-locket" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10: Eternal Glow Candle & Framed Portrait Set -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-candle-cat-portrait.png" alt="Bedside memorial candle, white roses vase, and framed companion cat portrait" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Candle &amp; Portrait</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Memorial Shrine Set</span>
+                <span class="product-price">From $45</span>
+              </div>
+              <h3 class="keepsake-card-title">Eternal Glow Candle &amp; Framed Portrait Set</h3>
+              <p class="keepsake-card-desc">Handcrafted bedside memorial set featuring a serene glowing pillar candle, fresh floral vase, and metallic heirloom portrait frame.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=memorial-candle" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 11: Forever In Our Hearts Guardian Angel Statue -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-angel-dog-sculpture.png" alt="Hand-painted guardian angel statue embracing a loyal companion dog with Forever in our Hearts inscription" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Angel Sculpture</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Handmade Sculpture</span>
+                <span class="product-price">From $95</span>
+              </div>
+              <h3 class="keepsake-card-title">&ldquo;Forever In Our Hearts&rdquo; Guardian Angel Statue</h3>
+              <p class="keepsake-card-desc">Heartfelt hand-painted companion angel sculpture gently embracing a faithful dog with engraved memorial script blessing.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=angel-shadowbox" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 12: Heritage Bell Collar & Custom Tag Memorial -->
+          <div class="keepsake-product-card">
+            <div class="keepsake-card-media">
+              <img src="assets/images/keepsakes/keepsake-cat-collar-tribute.png" alt="Handcrafted leather companion collar with brass bell and jewel charm" class="keepsake-img" loading="lazy">
+              <span class="keepsake-tag">Collar Keepsake</span>
+            </div>
+            <div class="keepsake-card-body">
+              <div class="keepsake-meta">
+                <span class="product-category">Custom Collar Memorial</span>
+                <span class="product-price">From $85</span>
+              </div>
+              <h3 class="keepsake-card-title">Heritage Bell Collar &amp; Custom Tag Memorial</h3>
+              <p class="keepsake-card-desc">Handmade Italian leather keepsake collar with brass bell and emerald charm, custom sized and dedicated to beloved animal companions.</p>
+              <div class="keepsake-card-action">
+                <a href="contact.html?item=collar-showcase" class="btn btn-outline w-full">
+                  <span>Request Personalization</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: Urn Collection
+         =================================================================== -->
+    <section class="section-spacing" id="urnCollectionSection">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge badge-accent">Vessels of Dignity</div>
+          <h2 class="section-title">The Handcrafted Pet Urn Gallery</h2>
+          <p class="section-subtitle">
+            Crafted from sustainable hardwoods, studio ceramics, and natural river stone, each vessel provides a dignified resting sanctuary.
+          </p>
+        </div>
+
+        <div class="urn-grid">
+          <!-- Urn 1: Rainbow Bridge Photo Box Urn -->
+          <div class="urn-card">
+            <div class="urn-media-wrap">
+              <img src="assets/images/keepsakes/urn-ceramic-artisan.jpg" alt="Rainbow Bridge painted black wooden pet urn box with golden retriever photo window and paw accents" class="urn-img" loading="lazy">
+              <span class="urn-type-badge">Rainbow Bridge Memorial</span>
+            </div>
+            <div class="urn-content">
+              <div class="urn-price-row">
+                <span class="urn-capacity">Small to Large (Up to 110 lbs)</span>
+                <span class="urn-price">$145</span>
+              </div>
+              <h3 class="urn-title">Rainbow Bridge Memorial Photo Urn</h3>
+              <p class="urn-desc">Black wooden memorial box with colorful Rainbow Bridge artwork, paw engravings, and a front glass photo window for your favorite companion portrait.</p>
+              <div class="urn-specs">
+                <span>&bull; Rainbow Bridge lid artwork</span>
+                <span>&bull; Built-in photo frame window</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Urn 2: Walnut Keepsake Heart Box -->
+          <div class="urn-card">
+            <div class="urn-media-wrap">
+              <img src="assets/images/keepsakes/urn-hardwood-walnut.png" alt="Engraved walnut keepsake memory box with silver heart pendant and pet fur lock" class="urn-img" loading="lazy">
+              <span class="urn-type-badge">Solid Walnut Keepsake</span>
+            </div>
+            <div class="urn-content">
+              <div class="urn-price-row">
+                <span class="urn-capacity">Keepsake Box (Ashes &amp; Fur)</span>
+                <span class="urn-price">$165</span>
+              </div>
+              <h3 class="urn-title">Forever In Our Hearts Walnut Vessel</h3>
+              <p class="urn-desc">Handcrafted walnut keepsake box laser-engraved with 'Forever in Our Hearts, Our Memory', featuring an interior silver heart urn and fur preservation recess.</p>
+              <div class="urn-specs">
+                <span>&bull; Laser engraved hardwood</span>
+                <span>&bull; Silver keepsake heart included</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Urn 3: Biodegradable Scatter Tube -->
+          <div class="urn-card">
+            <div class="urn-media-wrap">
+              <img src="assets/images/keepsakes/urn-biodegradable-scatter.png" alt="Eco-friendly biodegradable floral scattering tube urns with dog breed illustrations" class="urn-img" loading="lazy">
+              <span class="urn-type-badge">100% Eco Biodegradable</span>
+            </div>
+            <div class="urn-content">
+              <div class="urn-price-row">
+                <span class="urn-capacity">Scatter &amp; Earth Burial</span>
+                <span class="urn-price">$55</span>
+              </div>
+              <h3 class="urn-title">Botanical Floral Biodegradable Scatter Tubes</h3>
+              <p class="urn-desc">Constructed from unbleached recycled plant fibers with soft pastel floral print and companion dog illustrations, designed for peaceful scatter ceremonies.</p>
+              <div class="urn-specs">
+                <span>&bull; TSA airport friendly</span>
+                <span>&bull; Perforated push-tab lid</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Urn 4: River Stone Granite -->
+          <div class="urn-card">
+            <div class="urn-media-wrap">
+              <img src="assets/images/keepsakes/urn-granite-river.jpg" alt="Hand-carved granite stone cat memorial statue nestled along garden stone pathway" class="urn-img" loading="lazy">
+              <span class="urn-type-badge">Natural Granite Stone</span>
+            </div>
+            <div class="urn-content">
+              <div class="urn-price-row">
+                <span class="urn-capacity">Indoor &amp; Outdoor</span>
+                <span class="urn-price">$210</span>
+              </div>
+              <h3 class="urn-title">Hand-Carved Stone Cat Garden Memorial</h3>
+              <p class="urn-desc">Artisan-carved from solid granite stone with a weather-resistant textured finish that blends naturally into memorial garden walkways and tranquil flowerbeds.</p>
+              <div class="urn-specs">
+                <span>&bull; 100% Weatherproof granite</span>
+                <span>&bull; Hand-sculpted artisan carving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: Personalization
+         =================================================================== -->
+    <section class="section-spacing bg-surface" id="personalizationSection">
+      <div class="container">
+        <div class="personalization-grid">
+          <div class="personalization-media-wrap">
+            <img src="assets/images/keepsakes/personalization-engraving.jpg" alt="Custom engraved brass nameplate leather pet collars with personalized pet names and phone numbers" class="personalization-img" loading="lazy">
+            <div class="personalization-tag-card">
+              <div class="tag-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <div class="tag-card-text">
+                <span class="tag-title">Complimentary Proofing</span>
+                <span class="tag-sub">Review digital artwork preview prior to final engraving</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personalization-content">
+            <div class="badge badge-accent">Custom Craftsmanship</div>
+            <h2 class="section-title">Personalized With Detail &amp; Respect</h2>
+            <p class="personalization-lead">
+              Every bond is unique. We provide full customization options so your pet's memorial reflects their personality, funny quirks, and unforgettable place in your heart.
+            </p>
+
+            <div class="personalization-features-list">
+              <div class="custom-feature-item">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="feature-body">
+                  <h4 class="feature-title">Precision Laser Engraving &amp; Inscription</h4>
+                  <p class="feature-desc">Include your pet's name, dates, sweet nicknames, or custom memorial verses in elegant serif or handwritten script.</p>
+                </div>
+              </div>
+
+              <div class="custom-feature-item">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="feature-body">
+                  <h4 class="feature-title">Authentic Nose &amp; Paw Print Reproduction</h4>
+                  <p class="feature-desc">We can digitize ink impressions of your pet's actual paw or nose print and laser burn the exact contours into wood, metal, or stone.</p>
+                </div>
+              </div>
+
+              <div class="custom-feature-item">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="feature-body">
+                  <h4 class="feature-title">Fur Clipping Encapsulation &amp; Glass Infusion</h4>
+                  <p class="feature-desc">Preserve a lock of fur inside an artisan crystal glass orb or sealed memory locket alongside a certificate of authenticity.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="personalization-cta-row">
+              <a href="contact.html?type=custom-keepsake" class="btn btn-primary" id="customConsultBtn">
+                <span>Request Custom Inscription</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <span class="help-text">Free digital design mockup within 24 hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 5: Remember Them Forever CTA
+         =================================================================== -->
+    <section class="cta-banner-section section-spacing" id="keepsakesCTA">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-banner-grid">
+            <div class="cta-banner-content">
+              <div class="badge badge-accent">Everlasting Connection</div>
+              <h2 class="cta-title">Keep Their Memory Close To Your Heart</h2>
+              <p class="cta-desc">
+                Whether you need a single keepsake for yourself or individual memorial tokens for family members, our dedicated team is here to assist you with sensitivity and care.
+              </p>
+              <div class="cta-actions">
+                <a href="contact.html" class="btn btn-primary" id="keepsakesContactBtn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>Speak With A Keepsake Specialist</span>
+                </a>
+                <a href="tribute-wall.html" class="btn btn-secondary" id="keepsakesTributeLink">Visit The Tribute Wall</a>
+              </div>
+            </div>
+            <div class="cta-banner-media">
+              <img src="assets/images/keepsakes/keepsakes-cta.jpg" alt="Four adorable puppy companions sitting happily together in nature" class="cta-banner-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       Site Footer
+       =================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Emergency -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="Everlasting Paws Home">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.4 1.4.3l3.5-.8c.3-.1.6-.1.9 0l3.5.8c.5.1 1 0 1.4-.3C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10z"/>
+                <path d="M9 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                <path d="M15 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                <path d="M12 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+              </svg>
+            </div>
+            <div class="brand-text">Everlasting<span>Paws</span></div>
+          </a>
+          <p class="footer-desc">
+            Providing compassionate, certified pet cremation, memorial keepsakes, and tribute services. Dedicated to honoring the profound love between humans and animals.
+          </p>
+          <div class="emergency-notice">
+            <div class="notice-badge">24/7 Immediate Help</div>
+            <a href="tel:18005557297" class="notice-phone">1-800-555-PAWS (7297)</a>
+            <span class="notice-sub">Available for residential and veterinary transfers</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation & Pages -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Classic)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Serene)</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="tribute-wall.html" class="footer-link">Tribute Wall</a></li>
+            <li><a href="memorial-keepsakes.html" class="footer-link">Memorial Keepsakes</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Keepsakes -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#privateServiceCard" class="footer-link">Private Cremation</a></li>
+            <li><a href="services.html#communalServiceCard" class="footer-link">Communal Cremation</a></li>
+            <li><a href="services.html#serviceProcess" class="footer-link">Farewell Viewing Suites</a></li>
+            <li><a href="memorial-keepsakes.html#keepsakeCollectionSection" class="footer-link">Paw Print Keepsakes</a></li>
+            <li><a href="memorial-keepsakes.html#jewelry" class="footer-link">Memorial Jewelry</a></li>
+            <li><a href="memorial-keepsakes.html#urnCollectionSection" class="footer-link">Handcrafted Urns</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Support -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact &amp; Care</h4>
+          <div class="footer-contact-info">
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>4820 Serenity Meadow Way, Austin, TX 78746</span>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:18005557297">1-800-555-PAWS (7297)</a>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:care@everlastingpaws.org">care@everlastingpaws.org</a>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Daily Intake: 8:00 AM &ndash; 8:00 PM</span>
+            </div>
+            <div class="footer-portal-links">
+              <a href="login.html" class="footer-link">Family Portal Login</a>
+              <span class="divider">&bull;</span>
+              <a href="register.html" class="footer-link">Register Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Everlasting Paws Pet Cremation &amp; Memorial Services. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Care</a>
+          <a href="about.html">Pet Loss Grief Resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Gentle Care Consultation Modal -->
+  <div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitleKeepsakes">
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Close consultation modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h3 class="modal-title" id="modalTitleKeepsakes">Gentle Care &amp; Consultation</h3>
+      <p class="modal-desc">Leave your details and our care director will reach out promptly with warmth and support.</p>
+      <form class="modal-form">
+        <div class="form-group">
+          <label for="petParentNameKeepsakes">Your Name</label>
+          <input type="text" id="petParentNameKeepsakes" class="form-control" placeholder="e.g. Eleanor Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="contactPhoneKeepsakes">Phone / Email</label>
+          <input type="text" id="contactPhoneKeepsakes" class="form-control" placeholder="e.g. (555) 234-5678 or email" required>
+        </div>
+        <div class="form-group">
+          <label for="petNameKeepsakes">Pet's Name &amp; Type</label>
+          <input type="text" id="petNameKeepsakes" class="form-control" placeholder="e.g. Barnaby (Golden Retriever)">
+        </div>
+        <div class="form-group">
+          <label for="serviceInterestKeepsakes">Service of Interest</label>
+          <select id="serviceInterestKeepsakes" class="form-control">
+            <option value="keepsakes" selected>Memorial Keepsakes &amp; Jewelry</option>
+            <option value="private">Private Cremation</option>
+            <option value="communal">Communal Garden Scattering</option>
+            <option value="viewing">Private Viewing &amp; Farewell</option>
+            <option value="preplanning">Gentle Pre-Planning</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+          Send Gentle Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
