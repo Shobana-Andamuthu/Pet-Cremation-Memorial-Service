@@ -2588,12 +2588,16 @@ p {
 
 .footer-bottom-links {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(10px, 1.8vw, 22px);
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .footer-bottom-links a {
   color: var(--text-muted);
+  font-size: 0.84rem;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
