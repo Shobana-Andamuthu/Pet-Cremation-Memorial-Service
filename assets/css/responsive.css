@@ -772,6 +772,7 @@
 @media (max-width: 480px) {
   :root {
     --container-pad: 14px;
+    --header-height: 64px;
   }
 
   .section-padding {
@@ -780,7 +781,7 @@
   }
 
   .header-inner {
-    height: 64px;
+    height: var(--header-height, 64px);
     gap: 8px;
   }
 
@@ -840,10 +841,11 @@
 @media (max-width: 375px) {
   :root {
     --container-pad: 12px;
+    --header-height: 60px;
   }
 
   .header-inner {
-    height: 60px;
+    height: var(--header-height, 60px);
     gap: 6px;
   }
 
@@ -995,10 +997,11 @@
 @media (max-width: 320px) {
   :root {
     --container-pad: 8px;
+    --header-height: 56px;
   }
 
   .header-inner {
-    height: 56px;
+    height: var(--header-height, 56px);
     gap: 5px;
   }
 
@@ -1073,10 +1076,11 @@
 @media (max-width: 280px) {
   :root {
     --container-pad: 6px;
+    --header-height: 52px;
   }
 
   .header-inner {
-    height: 52px;
+    height: var(--header-height, 52px);
     gap: 4px;
   }
 

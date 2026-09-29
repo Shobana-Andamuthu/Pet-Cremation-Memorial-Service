@@ -53,6 +53,7 @@
 
   --container-max: 1240px;
   --container-pad: clamp(16px, 4vw, 32px);
+  --header-height: 76px;
 }
 
 /* Dark Mode Theme */
@@ -216,8 +217,8 @@ p {
 }
 
 .section-padding {
-  padding-top: clamp(48px, 6.5vw, 92px);
-  padding-bottom: clamp(48px, 6.5vw, 92px);
+  padding-top: clamp(44px, 5.5vw, 80px);
+  padding-bottom: clamp(44px, 5.5vw, 80px);
 }
 
 .section-header {
@@ -1198,8 +1199,8 @@ p {
    Shared Badges & Utilities
    =================================================================== */
 .section-spacing {
-  padding-top: clamp(48px, 6vw, 84px);
-  padding-bottom: clamp(48px, 6vw, 84px);
+  padding-top: clamp(44px, 5.5vw, 80px);
+  padding-bottom: clamp(44px, 5.5vw, 80px);
 }
 
 .badge {
@@ -1245,16 +1246,35 @@ p {
 .page-hero {
   position: relative;
   background: var(--bg-gradient);
-  padding-top: clamp(44px, 5.5vw, 72px);
-  padding-bottom: clamp(48px, 6.5vw, 84px);
+  min-height: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .page-hero {
+    height: auto;
+    min-height: auto;
+    padding-top: clamp(32px, 5vw, 48px);
+    padding-bottom: clamp(32px, 5vw, 48px);
+  }
+}
+
+.page-hero > .container {
+  width: 100%;
 }
 
 .page-hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.18fr 0.82fr;
   align-items: center;
-  gap: clamp(32px, 5.5vw, 68px);
+  gap: clamp(24px, 4vw, 48px);
+  width: 100%;
 }
 
 .page-hero-content {
@@ -1271,41 +1291,44 @@ p {
 
 .page-hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.1rem, 4vw, 3.3rem);
-  line-height: 1.16;
+  font-size: clamp(1.85rem, 2.6vw, 2.35rem);
+  line-height: 1.2;
   color: var(--text-main);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   letter-spacing: -0.015em;
+  display: block;
 }
 
 .page-hero-title em {
   font-style: italic;
   color: var(--accent);
+  display: inline;
 }
 
 .page-hero-desc {
-  font-size: clamp(0.98rem, 1.18vw, 1.12rem);
-  line-height: 1.72;
+  font-size: clamp(0.92rem, 1.05vw, 1rem);
+  line-height: 1.6;
   color: var(--text-muted);
-  margin-bottom: 28px;
-  max-width: 580px;
+  margin-bottom: 20px;
+  max-width: 560px;
+  display: block;
 }
 
 .page-hero-actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 34px;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .hero-stats-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 12px;
   width: 100%;
-  max-width: 620px;
-  padding-top: 24px;
+  max-width: 580px;
+  padding-top: 16px;
   border-top: 1px solid var(--surface-border);
 }
 
@@ -1313,12 +1336,12 @@ p {
   background-color: var(--surface);
   border: 1.5px solid var(--surface-border);
   border-radius: var(--radius-md);
-  padding: 16px 18px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 6px;
+  gap: 3px;
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
@@ -1331,7 +1354,7 @@ p {
 
 .stat-number {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--deep-accent);
   line-height: 1.1;
@@ -1339,12 +1362,12 @@ p {
 }
 
 .stat-label {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.35;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
 }
 
 [data-theme="dark"] .hero-stat-item {
@@ -1375,11 +1398,17 @@ p {
   box-shadow: var(--shadow-lg);
   border: 6px solid var(--surface);
   background-color: var(--surface);
+  aspect-ratio: 16/11;
+  width: 100%;
+  max-width: 440px;
+  max-height: 295px;
+  margin: 0 auto;
 }
 
 .page-hero-img {
   width: 100%;
-  aspect-ratio: 4/3;
+  height: 100%;
+  aspect-ratio: 16/11;
   object-fit: cover;
   display: block;
   transition: transform 0.6s ease;
@@ -1394,9 +1423,19 @@ p {
    =================================================================== */
 .hero-section {
   position: relative;
-  padding-top: clamp(32px, 5vw, 64px);
-  padding-bottom: clamp(48px, 7vw, 92px);
+  min-height: calc(100vh - var(--header-height, 76px) - 1px);
+  min-height: calc(100dvh - var(--header-height, 76px) - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: clamp(24px, 3.5vw, 48px);
+  padding-bottom: clamp(32px, 4.5vw, 56px);
   background: var(--bg-gradient);
+  box-sizing: border-box;
+}
+
+.hero-section > .container {
+  width: 100%;
 }
 
 .hero-grid {
@@ -1404,6 +1443,7 @@ p {
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   gap: clamp(32px, 5vw, 64px);
+  width: 100%;
 }
 
 .hero-content {
@@ -4020,13 +4060,20 @@ textarea.form-control {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: clamp(80px, 12vw, 140px);
-  padding-bottom: clamp(80px, 12vw, 140px);
-  border-bottom: 1px solid var(--surface-border);
-  overflow: hidden;
-  min-height: 85vh;
+  min-height: calc(100vh - var(--header-height, 76px) - 1px);
+  min-height: calc(100dvh - var(--header-height, 76px) - 1px);
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: clamp(32px, 5vw, 64px);
+  padding-bottom: clamp(32px, 5vw, 64px);
+  border-bottom: 1px solid var(--surface-border);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.hero2-section.hero2-bg-banner > .container {
+  width: 100%;
 }
 
 .hero2-overlay {
