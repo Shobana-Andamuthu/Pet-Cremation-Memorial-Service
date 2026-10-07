@@ -41,7 +41,9 @@
   .header-actions > .btn,
   .header-actions > .nav-cta-btn,
   #headerConsultBtn,
-  #headerHotlineBtn {
+  #headerHotlineBtn,
+  .header-actions > .theme-toggle,
+  .header-actions > .rtl-toggle {
     display: none !important;
   }
 

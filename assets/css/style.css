@@ -2265,11 +2265,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .tribute-family {
   font-size: 0.82rem;
   color: var(--text-light);
+  white-space: nowrap;
 }
 
 .candle-btn {
@@ -2283,6 +2285,8 @@ p {
   padding: 6px 12px;
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 [data-theme="dark"] .candle-btn {
