@@ -106,14 +106,12 @@
           <!-- RTL / LTR Toggle -->
           <button class="rtl-toggle" id="rtlToggleBtn" aria-label="Toggle text direction" title="Toggle RTL/LTR">RTL</button>
 
-          <!-- Login Button -->
-          <a href="login.html" class="btn btn-secondary btn-sm" id="headerLoginBtn" style="padding: 7px 16px;">
-            Login
-          </a>
-
-          <!-- Quick Consultation Action -->
-          <a href="#contactModal" data-open-modal="contact" class="btn btn-primary btn-sm" id="headerConsultBtn">
-            Care Hotline
+          <!-- Primary CTA: Arrange Immediate Care -->
+          <a href="#contactModal" data-open-modal="contact" class="btn btn-primary nav-cta-btn" id="headerCtaBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Arrange Immediate Care</span>
           </a>
 
           <!-- Hamburger Button (Tablet & Mobile) -->
@@ -170,13 +168,14 @@
         <a href="memorial-keepsakes.html" class="drawer-link">Memorial Keepsakes</a>
         <a href="about.html" class="drawer-link active">About Us</a>
         <a href="contact.html" class="drawer-link">Contact</a>
-        <a href="login.html" class="drawer-link" style="border-top: 1px solid var(--surface-border); margin-top: 4px; padding-top: 14px;">Family Login</a>
-        <a href="register.html" class="drawer-link">Create Account</a>
       </nav>
 
       <div class="drawer-footer">
-        <a href="#contactModal" data-open-modal="contact" class="btn btn-primary" id="drawerConsultBtn" style="width: 100%;">
-          Care Hotline
+        <a href="#contactModal" data-open-modal="contact" class="btn btn-primary drawer-cta-btn" id="drawerConsultBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span>Arrange Immediate Care</span>
         </a>
         <div class="drawer-controls">
           <button class="drawer-theme-btn" id="drawerThemeToggle" aria-label="Toggle light and dark mode" title="Toggle Theme">
@@ -507,11 +506,6 @@
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
               <span>Daily Intake: 8:00 AM &ndash; 8:00 PM</span>
-            </div>
-            <div class="footer-portal-links">
-              <a href="login.html" class="footer-link">Family Portal Login</a>
-              <span class="divider">&bull;</span>
-              <a href="register.html" class="footer-link">Register Account</a>
             </div>
           </div>
         </div>
